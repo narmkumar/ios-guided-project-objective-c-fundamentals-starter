@@ -7,8 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "LSIFileHelper.h"
-#import "LSIPerson.h"
+
 
 
 @interface LSIStarWarsAPITests : XCTestCase
@@ -17,5 +16,8 @@
 
 @implementation LSIStarWarsAPITests
 
+- (void) testAPI {
+    
+}
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "LSIFileHelper.h"
+#import "LSIPerson.h"
 
 @interface LSIPersonTests : XCTestCase
 
@@ -47,8 +49,6 @@
         XCTAssertEqualObjects(@"19BBY", luke.birthYear);
         XCTAssertEqualObjects(@"172", luke.height);
         XCTAssertEqualObjects(@"blue", luke.eyeColor);
-    
-
 }
 
 

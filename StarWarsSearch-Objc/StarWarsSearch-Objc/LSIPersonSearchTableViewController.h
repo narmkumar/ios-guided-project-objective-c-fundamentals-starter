@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+// Forward class declaration - saying I have a class named LSIPersonController (don't worry!)
+
+@class LSIPersonController;
+
 @interface LSIPersonSearchTableViewController : UITableViewController <UISearchBarDelegate>
 
-// TODO: Create an array to store people, that the table view can load
+@property NSArray *people;
+
+@property LSIPersonController *personController;
 
 @end

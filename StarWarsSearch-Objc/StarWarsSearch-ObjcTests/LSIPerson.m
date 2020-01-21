@@ -22,9 +22,35 @@
         NSString *birthYear = dictionary[@"birth_year"];
         NSString *eyeColor = dictionary[@"eye_color"];
         
+     return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
+        }
+    return self;
+}
+
+- (instancetype)initWithName:(NSString *)name
+                   birthYear:(NSString *)birthYear
+                      height:(NSString *)height
+                    eyeColor:(NSString *)eyeColor {
+    self = [super init];
+    if (self != nil) {
+
+        // Always use the _instanceVariable to do the assignment
+        // so that you don't have any side effects from custom setters
+
+//        self.name = name; // Ok for Swift, not Objective-C
         
+        _name = name;
+        _birthYear = birthYear;
+        _height = height;
+        _eyeColor = eyeColor;
     }
     return self;
+}
+
+- (void)helperFunction {
+
+    // Use self.name in non-init methods
+    self.name = @"Bob";
 }
 
 
